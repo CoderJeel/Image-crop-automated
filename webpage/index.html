@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Face App</title>
+    <title>Face App git</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -28,21 +29,45 @@
     <div class="container">
       <div class="row">
         <div class="col-12" id="header">
-          <h1 class="modal-title">
-            Automated Image Crop
-            <br />
-            <small><h6>Make your face batter</h6></small>
-          </h1>
+          <center>
+            <h1 class="modal-title">
+              Face-Finder
+              <br />
+              <small><h6>Make your face batter</h6></small>
+            </h1>
+          </center>
         </div>
       </div>
 
-      <div class="row">
+      <!--<div class="row">
         <div class="col-12" id="next">
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Contect Us</a></li>
             <li><a href="">Who Devlope this</a></li>
           </ul>
+        </div>
+      </div>-->
+      <div class="sidebar">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Contact Us</a></div>
+        <div><a href="#">Dev-Info</a></div>
+      </div>
+
+      <div class="main">
+        <div class="page">
+          <div class="hamburger" onclick="toggle();"></div>
+          <div class="content">
+            <h2>How to bake cookies</h2>
+            <p>Idk Google it</p>
+            <a
+              class="github"
+              href="https://github.com/codegem-insta"
+              target="_blank"
+            ></a>
+            <input type="submit" value="Upload" />
+            <input type="submit" value="Generate" />
+          </div>
         </div>
       </div>
     </div>
