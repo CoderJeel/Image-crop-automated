@@ -13,6 +13,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script src="script.js"></script>
   </head>
 
@@ -58,15 +62,40 @@
         <div class="page">
           <div class="hamburger" onclick="toggle();"></div>
           <div class="content">
-            <h2>How to bake cookies</h2>
-            <p>Idk Google it</p>
-            <a
+            <!--<h2>How to bake cookies</h2>
+            <p>Idk Google it</p>-->
+          
+
+            <div class="container1" id="umain ">
+              <div class="wrapper1" id="ubox">
+                <div class="image"></div>
+
+                <div class="content1" id="uvat">
+                  <div class="icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                  </div>
+                  <div class="text">No file chosen, yet!</div>
+                </div>
+              
+                <div class="cancel-btn"><i class="fas fa-time"></i></div>
+                <div class="file-name">File name here</div>
+              
+              </div>
+              <input id="default-btn" type="file" />
+              <button id="custom-btn">Choose a file</button>
+              <!--<button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
+         <input id="default-btn" type="file" hidden>-->
+            </div>
+          </div>
+        
+            <!--<a
               class="github"
               href="https://github.com/codegem-insta"
               target="_blank"
-            ></a>
-            <input type="submit" value="Upload" />
-            <input type="submit" value="Generate" />
+            ></a>-->
+
+            <!--<input type="submit" value="Upload" />
+            <input type="submit" value="Generate" />-->
           </div>
         </div>
       </div>

@@ -8,6 +8,9 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Ubuntu, "Helvetica Neue", sans-serif;
   background-color: #e8edf3;
+  height: 100%;
+  text-align: center;
+  place-items: center;
 }
 
 .hamburger {
@@ -102,4 +105,26 @@ h2 {
 
 .container {
   padding-top: 40px;
+}
+
+/*upload box */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+#umain {
+  place-items: center;
+  text-align: center;
+  height: 350px;
+  width: 100%;
+}
+
+#ubox {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
