@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Face App git</title>
+    <title>Face App</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -17,20 +18,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script src="script.js"></script>
   </head>
 
   <body>
-    <!--<h1>Automated Image Crop</h1>
-    <div class="modal-header">
-      <h1 class="modal-title">
-        Automated Image Crop
-        <br />
-        <small><h6>SUB-TITLE</h6></small>
-      </h1>
-    </div>-->
+    <!--header-->
 
-    <div class="container">
+    <div class="container1" id="means">
       <div class="row">
         <div class="col-12" id="header">
           <center>
@@ -43,15 +36,8 @@
         </div>
       </div>
 
-      <!--<div class="row">
-        <div class="col-12" id="next">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Contect Us</a></li>
-            <li><a href="">Who Devlope this</a></li>
-          </ul>
-        </div>
-      </div>-->
+      <!--side bar-->
+
       <div class="sidebar">
         <div><a href="#">Home</a></div>
         <div><a href="#">Contact Us</a></div>
@@ -61,44 +47,35 @@
       <div class="main">
         <div class="page">
           <div class="hamburger" onclick="toggle();"></div>
-          <div class="content">
-            <!--<h2>How to bake cookies</h2>
-            <p>Idk Google it</p>-->
-          
+          <div class="content1" id="ghad">
+            <!--upload box-->
 
-            <div class="container1" id="umain ">
-              <div class="wrapper1" id="ubox">
-                <div class="image"></div>
-
-                <div class="content1" id="uvat">
+            <div class="container">
+              <div class="wrapper">
+                <div class="image">
+                  <img src="" alt="" />
+                </div>
+                <div class="content">
                   <div class="icon">
                     <i class="fas fa-cloud-upload-alt"></i>
                   </div>
                   <div class="text">No file chosen, yet!</div>
                 </div>
-              
-                <div class="cancel-btn"><i class="fas fa-time"></i></div>
+                <div id="cancel-btn">
+                  <i class="fas fa-times"></i>
+                </div>
                 <div class="file-name">File name here</div>
-              
               </div>
-              <input id="default-btn" type="file" />
-              <button id="custom-btn">Choose a file</button>
-              <!--<button onclick="defaultBtnActive()" id="custom-btn">Choose a file</button>
-         <input id="default-btn" type="file" hidden>-->
+              <button onclick="defaultBtnActive()" id="custom-btn">
+                Choose a file
+              </button>
+              <input id="default-btn" type="file" hidden />
             </div>
-          </div>
-        
-            <!--<a
-              class="github"
-              href="https://github.com/codegem-insta"
-              target="_blank"
-            ></a>-->
-
-            <!--<input type="submit" value="Upload" />
-            <input type="submit" value="Generate" />-->
           </div>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

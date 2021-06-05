@@ -1,16 +1,114 @@
+/*upload box */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  display: grid;
+  height: 100%;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", sans-serif;
-  background-color: #e8edf3;
   height: 100%;
-  text-align: center;
+}
+.container {
+  height: 350px;
+  width: 430px;
+  position: relative;
   place-items: center;
+  text-align: center;
+  align-items: center;
+}
+.container .wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active {
+  border: none;
+}
+.wrapper .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon {
+  font-size: 100px;
+  color: #9658fe;
+}
+.wrapper .text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5b5b7b;
+}
+.wrapper #cancel-btn i {
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #9658fe;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i {
+  display: block;
+}
+.wrapper #cancel-btn i:hover {
+  color: #e74c3c;
+}
+.wrapper .file-name {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  display: none;
+  background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+.wrapper.active:hover .file-name {
+  display: block;
+}
+.container #custom-btn {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg, #3a8ffe 0%, #9658fe 100%);
+}
+
+/*side bar*/
+
+body {
+  text-align: center;
 }
 
 .hamburger {
@@ -29,6 +127,7 @@ body {
   transform: translateX(-200%);
   transition: transform 660ms;
 }
+
 .sidebar.active {
   transform: translateX(0%);
 }
@@ -44,6 +143,7 @@ body {
 
   transition: padding-left 560ms;
 }
+
 .main.active {
   padding-left: 300px;
 }
@@ -60,6 +160,7 @@ body {
 h2 {
   margin-bottom: 10px;
 }
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -67,16 +168,18 @@ h2 {
   align-items: center;
   font-size: 22px;
 }
+
 .sidebar > div {
   padding: 20px;
   cursor: pointer;
   transition: transform 140ms;
 }
+
 .sidebar > div:hover {
   transform: scale(1.2);
 }
 
-.content {
+.content1 {
   border-radius: 10px;
   background-color: #fff;
   padding: 20px;
@@ -87,44 +190,7 @@ h2 {
 
   position: relative;
 }
-.github {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
-}
-.github > svg {
-  width: 30px;
-  display: block;
-}
-
-.container {
+.container1 {
   padding-top: 40px;
-}
-
-/*upload box */
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-
-#umain {
-  place-items: center;
-  text-align: center;
-  height: 350px;
-  width: 100%;
-}
-
-#ubox {
-  height: 300px;
-  width: 100%;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 2px dashed #c2cdda;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
