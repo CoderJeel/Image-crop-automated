@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -28,9 +29,9 @@
         <div class="col-12" id="header">
           <center>
             <h1 class="modal-title">
-              Face-Finder
+              Profile Creator
               <br />
-              <small><h6>Make your face batter</h6></small>
+              <small><h6>Let us create your profile image</h6></small>
             </h1>
           </center>
         </div>
@@ -39,9 +40,9 @@
       <!--side bar-->
 
       <div class="sidebar">
-        <div><a href="#">Home</a></div>
+        <div><a href="index.html">Home</a></div>
         <div><a href="#">Contact Us</a></div>
-        <div><a href="#">Dev-Info</a></div>
+        <div><a href="dev-info/devinfo.html">Dev-Info</a></div>
       </div>
 
       <div class="main">
@@ -59,7 +60,7 @@
                   <div class="icon">
                     <i class="fas fa-cloud-upload-alt"></i>
                   </div>
-                  <div class="text">No file chosen, yet!</div>
+                  <div class="text">You didn't choose a file!</div>
                 </div>
                 <div id="cancel-btn">
                   <i class="fas fa-times"></i>
@@ -70,6 +71,30 @@
                 Choose a file
               </button>
               <input id="default-btn" type="file" hidden />
+            </br>
+          </br>
+      </br>
+      </br>
+      
+        <!--add Generate option-->
+              <a href="#" class="btn" id="genb">Generate Image</a>
+            </br>
+            <br>
+          </br>
+        </br>
+        <br>
+      </br>
+            <!--feedback box-->
+          <form>
+            <div class="row">
+              <div class="col"></div>
+              <label class="col1">Feedback:<br>
+                <textarea id="message" cols="30" rows="5" placeholder="Write your feedback here....."> </textarea></label>
+            </div>
+            <!--send button for feedback-->
+            <button>Send</button>
+          </form>
+            <!--end-->
             </div>
           </div>
         </div>
