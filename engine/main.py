@@ -56,5 +56,9 @@ def img_alligned(IMG_name,landmarks_model_path):
                     print('Wrote result %s' % aligned_face_path)
                 except:
                     print("Exception in face alignment!")
+
+                return face_img_name
         except:
             print("Exception in landmark detection!")
+
+
