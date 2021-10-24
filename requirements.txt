@@ -53,3 +53,4 @@ urllib3==1.26.5
 Werkzeug
 wrapt==1.12.1
 zipp
+wget

@@ -7,7 +7,10 @@ from werkzeug.utils import secure_filename
 import json
 import os
 from main import unpack_bz2,img_alligned
+import wget
 
+url = 'https://github.com/CoderJeel/Image-crop-automated/raw/master/engine/shape_predictor_68_face_landmarks.dat.bz2'
+filename = wget.download(url)
 landmarks_model_path = unpack_bz2("shape_predictor_68_face_landmarks.dat.bz2")
 
 
