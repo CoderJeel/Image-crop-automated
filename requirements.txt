@@ -46,3 +46,4 @@ Werkzeug
 wrapt==1.12.1
 zipp
 wget
+gunicorn
