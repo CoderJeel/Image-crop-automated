@@ -26,17 +26,20 @@ def index():
 def upload():
 
     if (request.method == "POST"):
+        # check if the post request has the file part
+        input1 = request.form.get('inpText')
+        input2 = request.form.get('inpText2')
         data = request.form.get('inpFile')
         f1 = request.files['inpFile']
         f1.save(os.path.join('input_data', secure_filename(f1.filename)))
         name = img_alligned(f1.filename,landmarks_model_path)
 
-        
+        print('+++++++++++++++++++++++++++++',f1.filename)
 #        output = model.predict(df[freq_list])
-        file_name = os.path.splitext(name)[0]
-        output_name = os.path.join('output_file', str(name))
+        #file_name = os.path.splitext(f1.filename)[0]
+        #output_name = os.path.join('output_file', f1.filename)
 
-    return send_file(output_name)
+    return "Done Saved"
 
 
 
